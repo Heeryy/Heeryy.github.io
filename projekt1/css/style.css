@@ -259,7 +259,7 @@ body {
 
 .box {
     float: left;
-    padding: 50px 0;
+    padding: 45px 0;
     width: 33.3%;
     text-align: center;
     background: #1E2934;
@@ -271,7 +271,7 @@ body {
 
 
 .box h4, h5, h6 {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .box i {
@@ -335,3 +335,4 @@ body {
 #contact-form .container button {
     margin: 0 0 25px 20px;
 }
+
