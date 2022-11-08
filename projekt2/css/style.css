@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Limbu&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    block-size: border-box;
+}
+
+body{
+    font-family: 'Noto Sans Limbu', sans-serif;
+}
+
+
+
+.text-primary {
+    color: #EFD09E;
+}
+
+
+
+#navbar {
+    background: #333;
+    margin: 0;
+    color: #F5F5F5;
+    display: flex;
+    padding: 0.6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0.50rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+#navbar ul li a {
+    padding: 0 0.5rem;
+}
+
+#navbar ul li a:hover {
+    color: #EFD09E;
+}
+
+#navbar #logo i {
+    padding: 0 0.5rem;
+}
+#navbar #logo a {
+    font-size: 1.25rem;
+}
+
+#showcase {
+    background: #333 url("../img/pozadi.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: #F5F5F5;
+}
+
+#showcase .showcase-content {
+    text-align: center;
+    text-decoration: none;
+    padding: 40vh 0;
+}
+
+#showcase .showcase-content h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.btn {
+    background: #333;
+    padding: 0.7rem 1.2rem;
+    border-radius: 20%;
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+.btn2 {
+    background: #5C5C5C;
+    padding: 0.7rem 1.2rem;
+    border-radius: 20%;
+    text-decoration: none;
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #333;
+    background: #EFD09E;
+    font-weight: bold;
+}
+
+.btn2:hover {
+    color: #333;
+    background: #EFD09E;
+    font-weight: bold;
+}
+
+#showcase .showcase-content p {
+    padding: 1.5rem;
+    color: #EFD09E;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+#showcase-bar h2 {
+    margin: 2rem 2rem;
+    text-align: center;
+}
+
+
+#showcase-bar .bar .icon {
+    background: #EFD09E;
+    font-size: 3.5rem;
+    padding: 1rem 1.9rem;
+    border-radius: 100%;
+}
+
+#showcase-bar .bar {
+    display: flex;
+    justify-content: center;
+}
+
+#showcase-bar .bar .space {
+    margin: 0 2.5rem;
+    text-align: center;
+    max-width: 15vw;
+}
+#showcase-bar .bar .space .p {
+    padding-top: 1.8rem;
+}
+
+#about {
+    height: 60vh;
+    display: flex;
+    background: #333333;
+    margin-top: 2.5rem;
+}
+
+#about #about-img {
+    background: url("../img/aboutimg.jpg") no-repeat center center/cover;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about .about-p {
+    margin: 2rem 3rem;
+    color: white;
+    max-width: 40%;
+}
+
+#about .about-p h3 {
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+#who {
+    height: 30vh;
+}
+
+#who h4 {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+}
+
+#who #astralis {
+
+}
+
+#who .bar-who {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#who .bar-who .space-who {
+    margin: 2.5rem 3rem 0 3rem;
+}
+
+#who .bar-who .space-who p {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+#contact {
+    background: #333333;
+    display: flex;
+}
+
+#contact #contact-form label {
+    display: block;
+    padding: 1.2rem 0;
+    color: #F5F5F5;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#contact #contact-form {
+    padding: 2rem 3rem;
+    width: 45%;
+}
+
+#contact #contact-form input, textarea {
+    width: 42vw;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact .contact {
+    background: #3D3D3D;
+    width: 50%;
+
+}
+
+#contact .contact h6 {
+    padding: 2rem 3rem;
+    color: #F5F5F5;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+#contact #contact-form h5 {
+    color: #F5F5F5;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+#contact .contact .list ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact .contact .list {
+    padding-left: 3rem;
+}
+
+#contact .contact .list li {
+    padding: 1.8rem 0;
+    color: #F5F5F5;
+}
+
+.dotted {
+    border: 1px dotted #707070;
+    width: 44vw;
+}
+
+#footer {
+    height: 10vh;
+    background: #666666;
+}
+
+#footer .footer-content {
+    text-align: center;
+    padding-top: 2.1rem;
+    color: #F5F5F5;
+}
