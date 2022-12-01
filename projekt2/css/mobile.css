@@ -1,0 +1,61 @@
+#navbar {
+    display: block;
+    text-align: center;
+}
+
+#navbar ul {
+    text-align: center;
+    display: block;
+}
+
+#showcase-bar .bar .space {
+    max-width: none;
+    padding: 3rem 0;
+}
+
+#showcase-bar .bar {
+    display: block;
+
+}
+
+#about #about-img {
+    display: none;
+}
+
+#about .about-p p {
+    margin: 0;
+}
+
+#about .about-p {
+    max-width: none;
+}
+
+#contact {
+    display: block;
+}
+
+#contact .contact {
+    width: 100%;
+}
+
+.dotted {
+    width: 85vw;
+}
+
+#contact #contact-form {
+    width: 100%;
+    padding-right: 2rem;
+}
+
+#contact #contact-form input, textarea {
+    width: 80vw;
+}
+
+#who .bar-who {
+    display: block;
+}
+
+#who {
+    height: 80vh;
+}
+
