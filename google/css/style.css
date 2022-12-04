@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background: #B8B8B8;
+}
+
+.active {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#navbar {
+    background: #3D3D3D;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: right;
+    padding: 2.1rem 1rem 0 0;
+    box-shadow: -1px 7px 22px -1px rgba(0,0,0,0.75);
+}
+
+#navbar ul li {
+    padding: 0 5px 0 5px;
+}
+
+#navbar ul li a {
+    font-size: 1.2rem;
+    padding: 0 1.3rem;
+    text-decoration: none;
+}
+
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+#section {
+    text-align: center;
+    justify-content: center;
+}
+
+#section h1 {
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+}
+
+#section #formm {
+    display: block;
+}
+
+#section #form {
+
+}
+
+.box {
+    width: 25%;
+    height: 25px;
+    border: hidden;
+    color: black;
+    border-radius: 22px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+input[type="search"] {
+    display: block;
+    margin: auto;
+}
+
+
+.no-outline {
+    outline: none;
+}
+
+.button {
+    color: black;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 0.4rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: -2px 4px 51px -2px rgba(0,0,0,0.75);
+}
+
+.button:hover {
+    background: #D6D6D6;
+}
+
+.text {
+    color: white;
+    font-size: 1rem;
+}
+
+.box2 {
+    width: 25%;
+    height: 25px;
+    border: hidden;
+    color: black;
+    border-radius: 22px;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+#section .formm label {
+    padding-right: 15px;
+    text-align: center;
+    text-align-last: center;
+}
+
+.prvni {
+    padding-right: 1rem;
+}
+
+.druhy {
+    padding-right: 0.8rem;
+}
+.treti {
+    padding-right: 0.5rem;
+}
+
+.ctvrty {
+    padding-right: 0.2rem;
+}
+
+
