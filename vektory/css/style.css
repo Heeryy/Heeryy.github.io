@@ -18,3 +18,8 @@ form {
     margin: 10px;
 }
 
+#vysledek {
+    text-align: center;
+    font-size: 2em;
+}
+
