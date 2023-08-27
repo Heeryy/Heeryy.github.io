@@ -67,9 +67,6 @@
     background-color: #F0ED93;
 }
 
-#section-slider {
-
-}
 
 #aktuality {
     margin: 0 0 15vh 0;
@@ -78,14 +75,13 @@
 
 .slider{
     width: 100%;
-    height: 500px;
-    border-radius: 10px;
+    height: 800px;
     overflow: hidden;
 }
 
 .slides{
     width: 500%;
-    height: 500px;
+    height: 800px;
     display: flex;
 }
 
@@ -100,7 +96,7 @@
 
 .slide img{
     width: 100%;
-    height: 500px;
+    height: 800px;
 }
 
 /*css for manual slide navigation*/
@@ -126,7 +122,7 @@
 }
 
 .manual-btn:hover{
-    background: #40D3DC;
+    background: #EBE76C;
 }
 
 #radio1:checked ~ .first{
@@ -145,6 +141,10 @@
     margin-left: -60%;
 }
 
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+
 /*css for automatic navigation*/
 
 .navigation-auto{
@@ -152,8 +152,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 460px;
-    z-index: 1;
+    margin-top: 760px;
 }
 
 .navigation-auto div{
@@ -183,6 +182,10 @@
     background: #EBE76C;
 }
 
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #EBE76C;
+}
+
 
 #aktuality-wrapper {
     display: grid;
@@ -190,14 +193,9 @@
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    height: 100vh;
 }
 
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
-}
 
 .div1 {
     grid-area: 1 / 3 / 2 / 6;
@@ -205,8 +203,8 @@
 }
 .div2 {
     grid-area: 2 / 3 / 3 / 4;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: start;
@@ -216,8 +214,8 @@
 
 .div3 {
     grid-area: 2 / 4 / 3 / 5;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: center;
@@ -227,8 +225,8 @@
 
 .div4 {
     grid-area: 3 / 3 / 4 / 4;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: start;
@@ -238,8 +236,8 @@
 
 .div5 {
     grid-area: 3 / 4 / 4 / 5;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: center;
@@ -249,8 +247,8 @@
 
 .div6 {
     grid-area: 4 / 3 / 5 / 4;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: start;
@@ -260,8 +258,8 @@
 
 .div7 {
     grid-area: 4 / 4 / 5 / 5;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: center;
@@ -305,6 +303,8 @@
     background-color: #F58066;
     transition: 0.5s ease-in;
 }
+
+
 
 #footer {
     display: grid;
