@@ -63,7 +63,7 @@
     background-color: #F0ED93;
 }
 
-.active {
+.active-nav {
     background-color: #F0ED93;
 }
 
@@ -72,130 +72,76 @@
     margin: 0 0 15vh 0;
 }
 
-
-.slider{
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
+#section-slider {
+    z-index: -1;
+    position: relative;
 }
 
-.slides{
-    width: 500%;
-    height: 800px;
-    display: flex;
+.slideshow-container .mySlides img {
+    max-height: 70vh;
 }
 
-.slides input{
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
     display: none;
 }
 
-.slide{
-    width: 20%;
-    transition: 2s;
-}
-
-.slide img{
-    width: 100%;
-    height: 800px;
-}
-
-/*css for manual slide navigation*/
-
-.navigation-manual{
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
     position: absolute;
+    bottom: 8px;
     width: 100%;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-.manual-btn{
-    border: 2px solid #EBE76C;
-    padding: 5px;
-    border-radius: 10px;
+.dot {
     cursor: pointer;
-    transition: 1s;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.manual-btn:not(:last-child){
-    margin-right: 40px;
+.active {
+    background-color: #717171;
 }
 
-.manual-btn:hover{
-    background: #EBE76C;
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -20%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -40%;
-}
-
-#radio4:checked ~ .first{
-    margin-left: -60%;
-}
-
-#radio5:checked ~ .first{
-    margin-left: -80%;
-}
-
-/*css for automatic navigation*/
-
-.navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 760px;
-}
-
-.navigation-auto div{
-    border: 2px solid #EBE76C;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #EBE76C;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #EBE76C;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #EBE76C;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #EBE76C;
-}
-
-#radio5:checked ~ .navigation-auto .auto-btn5{
-    background: #EBE76C;
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 
 #aktuality-wrapper {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    height: 100vh;
 }
 
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
+}
 
 .div1 {
     grid-area: 1 / 3 / 2 / 6;
@@ -203,8 +149,8 @@
 }
 .div2 {
     grid-area: 2 / 3 / 3 / 4;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: start;
@@ -214,8 +160,8 @@
 
 .div3 {
     grid-area: 2 / 4 / 3 / 5;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: center;
@@ -225,8 +171,8 @@
 
 .div4 {
     grid-area: 3 / 3 / 4 / 4;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: start;
@@ -236,8 +182,8 @@
 
 .div5 {
     grid-area: 3 / 4 / 4 / 5;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: center;
@@ -247,8 +193,8 @@
 
 .div6 {
     grid-area: 4 / 3 / 5 / 4;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: start;
@@ -258,13 +204,22 @@
 
 .div7 {
     grid-area: 4 / 4 / 5 / 5;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     background-color: #fff;
     box-shadow: 4px 3px 30px -1px rgba(0,0,0,0.56);
     justify-self: center;
     align-self: center;
     padding: 10px;
+}
+
+.zjistit-vice {
+    grid-area: 5 / 3 / 6 / 5;
+    justify-self: center;
+    align-self: center;
+    background-color: #EBE76C;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .div8 {
@@ -303,8 +258,6 @@
     background-color: #F58066;
     transition: 0.5s ease-in;
 }
-
-
 
 #footer {
     display: grid;
