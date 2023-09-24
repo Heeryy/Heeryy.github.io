@@ -8,6 +8,7 @@
     <title>Farnost Kravare</title>
 </head>
 <body>
+
 <nav>
     <div id="nav-logo">
         <img src="./img/farnostkravare-final.png" alt="Logo Farnost" height="130">
@@ -27,12 +28,16 @@
         </div>
     </div>
     <div id="nav-navigace" class="relative">
-        <ul>
+        <ul id="nav">
             <li class="active-nav"><a href="index.html">Úvod</a></li>
-            <li><a href="">O Farnosti</a></li>
+            <li><a href="">O Farnosti</a>
+                <ul>
+                    <li><a href="#">Základní informace</a></li>
+                    <li><a href="zivot-farnosti.html">Život farnosti</a></li>
+                </ul>
+            </li>
             <li><a href="">Bohoslužby</a></li>
             <li><a href="">Ohlášky</a></li>
-            <li><a href="">Život Farnosti</a></li>
             <li><a href="">Fotogalerie</a></li>
             <li><a href="">Historie</a></li>
             <li><a href="">Farní časopis</a></li>
@@ -40,52 +45,17 @@
         </ul>
     </div>
 </nav>
-
 <section id="section-potrebuji">
-<div id="potrebuji">
-    <div id="uredni-hodiny">
-        <table>
-            <thead>
-            <tr>
-                <th colspan="4">Úřední hodiny</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td colspan="4"></td>
-            </tr>
-            <tr>
-                <td>Pondělí</td>
-                <td>10:00 - 11:30</td>
-                <td>Úřaduje P. Jakub Lasák, kaplan</td>
-            </tr>
-            <tr>
-                <td>Čtvrtek</td>
-                <td>9:00 - 11:00</td>
-                <td><span>Úřaduje P. Jakub Lasák, kaplan</span></td>
-            </tr>
-            <tr>
-                <td>Čtvrtek</td>
-                <td>15:00 - 16:30</td>
-                <td><span>Úřaduje P. Jan Szkandera, farář</span></td>
-            </tr>
-            </tbody>
-        </table>
-        <img src="./img/farni%20kancelar.jpg" alt="" height="300" width="400">
+    <div id="zakladni-informace">
+        <h1>Základní informace</h1>
+        <p>Farnost Kravaře se nachází na území města Kravaře, které je složeno ze tří historických částí: Kravaře, Kouty a Dvořisko. V naší farnosti můžete najít několik sakrálních staveb. Předně se jedná o farní kostel sv. Bartoloměje, filiální kostel sv. Mikuláše, dále pak kaple sv. Michaela na Dvořisku, kaple sv. Jana Křtitele v Koutech, kaple sv. Michaela, která je součástí zámeckého areálu Zámek Kravaře.</p>
+        <p>Naše farnost je spolu s dalšími 22 farnostmi součástí hlučínského děkanátu.
+
+            Podle posledního sčítání pravidelně navštěvovalo bohoslužby v naší farnosti cca. 1 000 věřících. Součástí naší farnosti je i klášter sester Kongregace Služebnic Nejsvětějšího Srdce Ježíšova. Úzce také spolupracujeme s Domovem pro seniory sv. Hedviky v Kravařích.
+
+            V naší farnosti je nyní farářem <span class="bold-text">P. Mgr. Jan Szkandera</span>, který je zároveň místoděkanem. Farním vikářem je <span class="bold-text">P. Mgr. Jakub Lasák</span>, který je zároveň kaplanem pro mládež pro hlučínský děkanát.</p>
+
     </div>
-
-    <div id="uredni-hodiny-text">
-
-        <p>
-            Farní kancelář je umístěna v přízemí farní budovy a je zde k dispozici pro vaše potřeby v dané době kněz. V tyto hodiny budou otevřeny hlavní dveře fary, tedy z Náměstí a proto nebudete muset zvonit. Prosíme, abyste jimi vcházeli, půjdete-li do kanceláře vyřizovat své záležitosti a ne vchodem ze dvora.
-        </p>
-        <p class="bold-text">Tento rozpis neplatí v případě státních či jiných svátků.</p>
-        <p class="bold-text">V případě potřeby zaopatřování volejte kdykoli.</p>
-        <p>Svatby je nutno domlouvat pouze s farářem.  </p>
-        <p>Prosíme, abyste své záležitosti (potvrzení o svátostech, hlášení křtu, svateb, propuštění ke svátostem do jiné farnosti a podobně) vyřizovali v těchto hodinách. V případě hlášení pohřbu kontaktujte nejprve pohřební službu, která poté s námi telefonicky domluví termín a následně v úředních hodinách přijďte sepsat náležitosti. Chceme tak z důvodu, že pohřební služba a kněží mohou mít různé termíny obsazené, aniž by o tom vzájemně věděli</p>
-    </div>
-</div>
-
 </section>
 
 <section id="aktuality">
@@ -95,8 +65,8 @@
         <div class="div3">Aktualita 2</div>
         <div class="div4">Aktualita 3</div>
         <div class="div8">
-            <ul>
-                <li class="navdown-active"><a href="potrebuji-vyridit.html" class="navdown-active-a">Potřebuji:</a></li>
+            <ul id="aktu-nav">
+                <li class="background-active"><a href="farni-kancelar.html">Farní kancelář</a></li>
                 <li><a href="krest.html">Křest</a></li>
                 <li><a href="svatost-smireni.html">Svatost smíření</a></li>
                 <li><a href="eucharistie.html">Eucharistie</a></li>
@@ -108,7 +78,6 @@
             </ul>
         </div>
     </div>
-
 </section>
 
 <footer id="footer">
@@ -131,14 +100,12 @@
     <div id="footer-kontakt">
         <p>Kontakty</p>
         <p><i class="fa-solid fa-phone"></i> 890 989 098 <br>
-        <i class="fa-solid fa-envelope"></i> email@email.cz</p>
+            <i class="fa-solid fa-envelope"></i> email@email.cz</p>
     </div>
 
 </footer>
 
-
 <script src="./css-java/java.js"></script>
-
 
 </body>
 </html>
