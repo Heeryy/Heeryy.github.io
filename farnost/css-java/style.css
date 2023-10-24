@@ -123,6 +123,10 @@
     margin-top: 5vh;
 }
 
+#nav-kontakt div i {
+    padding-right: 5px;
+}
+
 
 .citat {
     text-align: left;
@@ -642,7 +646,85 @@
     padding-top: 10px;
 }
 
+#kostely-kaple {
+    display: block;
+    width: 45vw;
+}
 
+#kostely-kaple h1, h2 {
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+}
 
+#kostely-kaple .kaple-text img {
+    display: block;
+    margin: auto;
+    max-width: 60%;
+    padding: 1vh 0 1vh 0;
+}
 
+#kostely-kaple .kaple-text p {
+    padding-top: 1vh;
+}
+
+#kostely-kaple .kaple-text {
+    border-bottom: 1px black dashed;
+}
+
+#kostely-kaple .kaple-dalsi .kaple-flex {
+    display: flex;
+}
+
+#kostely-kaple .kaple-dalsi img {
+    padding: 2vh;
+}
+
+#kostely-kaple .kaple-dalsi p {
+    text-align: center;
+    padding-top: 10vh;
+}
+
+#kostely-kaple > p {
+    text-align: center;
+    padding-top: 2vh;
+}
+
+#bohosluzby table {
+    border:1px solid #b3adad;
+    border-collapse:collapse;
+    padding:5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 25vh;
+    margin-bottom: 2vh;
+}
+#bohosluzby table th {
+    border:1px solid #b3adad;
+    padding:5px;
+    background: #f0f0f0;
+    color: #313030;
+
+}
+#bohosluzby table td {
+    border:1px solid #b3adad;
+    text-align:center;
+    padding:5px;
+    background: #ffffff;
+    color: #313030;
+}
+
+#bohosluzby {
+    width: 45vw;
+}
+
+#bohosluzby h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#bohosluzby p {
+    text-align: center;
+    padding-bottom: 2vh;
+}
 
