@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css-js/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/party-stan-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/party-stan-favicon-16x16.png">
+    <title>Párty stan | Pronájem</title>
+</head>
+<body>
+<header>
+    <div>
+        <a href="index.html"><img src="./img/party-stan-logo-text.svg" alt="Logo Party stan" height="75" width="115"></a>
+        <h1><a href="index.html">Párty stan</a></h1>
+    </div>
+    <nav>
+        <ul class="nav-menu">
+            <li class="nav-link"><a href="index.html">Úvod</a></li>
+            <li class="nav-link"><a href="stany.html">Stany</a></li>
+            <li class="nav-link"><a href="o-nas.html">O nás</a></li>
+            <li class="nav-link"><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-link"><a href="pronajmout.html">Pronajmout</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+
+<section class="section-container">
+    <div id="formular-container">
+        <h2>Vyplňte formulář pro domluvení konzultací</h2>
+        <p>Po odeslani formulare vas v co nejblizsi dobe zkontaktujeme.</p>
+        <div id="formular">
+            <form action="pronajmout.html" method="post">
+                <label>Jméno</label><br>
+                <input placeholder="Zde napište jméno" type="text" name="name" class="input"><br>
+                <label>Příjmení</label><br>
+                <input placeholder="Zde napište příjmení" type="text" name="surname" class="input"><br>
+                <label>Email</label><br>
+                <input placeholder="Zde napište email" type="text" name="email" class="input"><br>
+                <label>Telefon</label><br>
+                <input placeholder="Zde napište telefon" type="text" name="mobile" class="input"><br>
+                <label>Od</label><br>
+                <input type="date" class="input"><br>
+                <label>Do</label><br>
+                <input type="date" class="input"><br>
+                <label>Stan</label><br>
+                <select name="tent" id="stan-vyber" required>
+                    <option value="" disabled selected hidden="hidden">Vyberte stan</option>
+                    <option value="stan1">Stan 1</option>
+                    <option value="stan2">Stan 2</option>
+                    <option value="stan3">Stan 3</option>
+                    <option value="stan4">Stan 4</option>
+                </select>
+                <input type="submit" value="Odeslat zadost" name="submit" class="button-form">
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div>
+        <p>Jedná se o maturitní práci</p>
+        <p>&#169; Tobiáš Harasim 2023-2024. Všechny práva vyhrazena</p>
+    </div>
+</footer>
+
+</body>
+</html>
